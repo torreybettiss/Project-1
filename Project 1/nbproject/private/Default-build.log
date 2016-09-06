@@ -1,0 +1,14 @@
+gcc -c -Wall myshell.c
+gcc -c -Wall parse.c 
+parse.c: In function 'programCall':
+parse.c:228:21: warning: missing sentinel in function call [-Wformat=]
+                     k=execl("/bin/prime","./prime", "-l",0);
+                     ^
+parse.c:215:10: warning: unused variable 'Path' [-Wunused-variable]
+    char* Path ="/usr/share/centrifydc/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/ARGONET/tlb76/.local/bin:/home/ARGONET/tlb76/bin/prime";
+          ^
+parse.c: In function 'pathFinder':
+parse.c:283:8: warning: 'return' with a value, in function returning void
+ return 0;
+        ^
+gcc myshell.o parse.o -o myshell
