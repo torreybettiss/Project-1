@@ -1,5 +1,8 @@
 /* 
- * This program prompts the user for two input values to compute the average of the two values.
+ * This program simulates a shell the user can use to execute
+ * files in their directory. The user can also import arguments
+ * through an input file and output program execution results
+ * to an output file the create.
  * 
  * @authors Ashley Miller / Torrey Bettis
  * @date 8/24/2016
@@ -17,6 +20,7 @@ int main(int argc, char** argv)
 { 
     ParamP param = newParam();
     runPrompt(param, argv[1]);
+    freeParam(param);	
 
     return (EXIT_SUCCESS);
 }

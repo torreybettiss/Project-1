@@ -75,7 +75,7 @@ struct PARAM
     char *argumentVector[MAXARGS]; /* array of strings */
 };
 
-/* a typedef so we donâ€™t need to use "struct PARAM" all the time */
+/* a typedef so we don't need to use "struct PARAM" all the time */
 typedef struct PARAM Param_t;
 
 
@@ -366,4 +366,11 @@ int getInput(ParamP param)
     }
     
     return 1;
+}
+
+ParamP freeParam(ParamP param)
+{
+	free(param);
+	param = NULL;
+        return param;
 }

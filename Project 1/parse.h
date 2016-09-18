@@ -40,5 +40,11 @@ int  parseInput(ParamP , char []);
  */
 void printParams(ParamP);
 
+/*
+ * Deallocates the memory for the PARAM structure
+ * @param: pointer to the PARAM structure
+ * @return: pointer to a PARAM structure
+ */
+ParamP freeParam(ParamP);
 
 #endif /* PARSE_H */
