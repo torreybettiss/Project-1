@@ -2,7 +2,7 @@
 
 C=gcc
 
-FLAGS= -c -Wall
+FLAGS= -g -c  -Wall
 
 myshell: myshell.o parse.o
 	 $(C) myshell.o parse.o -o myshell

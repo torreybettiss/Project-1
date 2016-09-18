@@ -1,9 +1,9 @@
 /* 
  * This program prompts the user for two input values to compute the average of the two values.
  * 
- * @author Ashley Miller
+ * @authors Ashley Miller / Torrey Bettis
  * @date 8/24/2016
- * @info Course COP4634
+ * @info Course COP4634 Project 1
  */
 
 #include <stdio.h>

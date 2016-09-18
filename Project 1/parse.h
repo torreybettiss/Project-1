@@ -1,8 +1,8 @@
 /* 
  * @File:   parse.h
- * @author Ashley Miller
+ * @authors Ashley Miller / Torrey Bettis
  * @date 8/24/2016
- * @info Course COP4634
+ * @info Course COP4634 Project 1
  */
 
 #ifndef PARSE_H
@@ -29,9 +29,9 @@ void runPrompt(ParamP, char *);
  * Parses the string input into tokens and stores the tokens
  * in the PARAM structure
  * @param: pointer to the PARAM structure
- * @return: nothing
+ * @return: 0 if errors, 1 if no parsing errors
  */
-void parseInput(ParamP , char []);
+int  parseInput(ParamP , char []);
 
 /*
  * Prints the values of the PARAM structure
